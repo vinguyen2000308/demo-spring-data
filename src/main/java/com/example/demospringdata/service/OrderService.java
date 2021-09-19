@@ -4,6 +4,7 @@ import com.example.demospringdata.domain.Order;
 import com.example.demospringdata.repo.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 
 import java.util.List;
 
@@ -19,7 +20,9 @@ public class OrderService {
     }
 
     public List<Order> getAll() {
-        return orderRepo.findAll();
+        List<Order> all = orderRepo.findAll();
+        Assert.isTrue(all.size() == 10);
+        return all;
     }
 
 

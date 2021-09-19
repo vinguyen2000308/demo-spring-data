@@ -1,4 +1,4 @@
-package com.example.demospringdata.configuration;
+package com.example.demospringdata.interceptor;
 
 import com.example.demospringdata.core.ThreadLocalStorage;
 import org.springframework.context.annotation.Configuration;

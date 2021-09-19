@@ -18,7 +18,7 @@ public class ThreadLocalStorage {
     public static String getTenantName() {
         String s = tenant.get();
         if (Objects.isNull(s))
-            return defaultDatasource;
+            return "la";
         else
             return s;
     }
